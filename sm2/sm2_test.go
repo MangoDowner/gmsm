@@ -70,7 +70,7 @@ func TestSm2(t *testing.T) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	msg, _ = ioutil.ReadFile("ifile")                // 从文件读取数据
+	msg, _ = ioutil.ReadFile("ifile")  // 从文件读取数据
 	sign, err := privKey.Sign(rand.Reader, msg, nil) // 签名
 	if err != nil {
 		log.Fatal(err)
